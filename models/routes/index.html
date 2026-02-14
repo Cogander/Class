@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard Guru</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="bg">
+
+<div class="header">
+  <h1>Dashboard Guru 🔐</h1>
+  <a href="/">Keluar</a>
+</div>
+
+<div class="stats">
+  <div class="card">
+    <h3>Total Siswa</h3>
+    <p><%= totalStudents %></p>
+  </div>
+  <div class="card">
+    <h3>Total Tugas</h3>
+    <p><%= totalAssignments %></p>
+  </div>
+</div>
+
+<div class="table">
+  <h2>Daftar Siswa</h2>
+  <% students.forEach(s => { %>
+    <div class="row">
+      <%= s.name %> - <%= s.email %>
+    </div>
+  <% }) %>
+</div>
+
+</body>
+</html>
