@@ -1,0 +1,37 @@
+body.bg {
+  background: linear-gradient(135deg,#2b5876,#4e4376);
+  font-family: Poppins;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.table {
+  background: white;
+  color: black;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.row {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
