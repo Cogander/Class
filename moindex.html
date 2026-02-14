@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard Siswa</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="bg">
+
+<h1>Classroom Saya 📚</h1>
+
+<div class="class-list">
+  <% assignments.forEach(a => { %>
+    <div class="class-card">
+      <h3><%= a.title %></h3>
+      <p><%= a.description %></p>
+    </div>
+  <% }) %>
+</div>
+
+</body>
+</html>
